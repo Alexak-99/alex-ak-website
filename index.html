@@ -64,6 +64,9 @@ button:hover{
 <a href="https://instagram.com/ayushak_99" target="_blank">
     <button>Follow Me 📱</button>
 </a>
+<h1>👋 Hi, I'm Alex AK</h1>
+<p id="typing"></p>
+    
 </div>
 
 <iframe width="560" height="315"
@@ -79,7 +82,18 @@ title="YouTube video player"
 frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 allowfullscreen>
-</iframe>
-    
+</iframe
+    </script> 
+    cons text = "web Developer | Python learner | Cyber security Enthusiast";
+    let i = 0;
+    function typewriter() {
+    if (i < text.lenth) {
+         document.getElementById("typing").innerhtml += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 70);
+       }
+     }
+  window.onload = typeWriter;
+    </script>
 </body>
 </html>
