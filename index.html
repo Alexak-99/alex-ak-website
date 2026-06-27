@@ -118,17 +118,19 @@ frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 allowfullscreen>
 </iframe
-    </script> 
-    cons text = "web Developer | Python learner | Cyber security Enthusiast";
-    let i = 0;
-    function typewriter() {
-    if (i < text.lenth) {
-         document.getElementById("typing").innerhtml += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 70);
-       }
-     }
-  window.onload = typeWriter;
-    </script>
+ <script>
+const text = "Web Developer | Python Learner | Cyber Security Enthusiast";
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 70);
+  }
+}
+
+window.onload = typeWriter;
+</script>   
 </body>
 </html>
